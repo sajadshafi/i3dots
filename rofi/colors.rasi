@@ -1,0 +1,18 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Sajad Shafi */
+
+* {
+    black:		#000000;
+    white:		#FFFFFF;
+    background:		#444444; 
+    foreground:		#F8F8F2;
+    primary:		#A6AD7F;
+    primaryLight:	#D3C6AA;
+    red:		#C42412;
+    transparent:	#00000000;
+    transparentBg:	#2E3440E2;
+    urgent:		#E06C75FF;
+}
+
+@import "~/.config/rofi/app_launcher.rasi"
+

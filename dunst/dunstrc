@@ -1,0 +1,42 @@
+[global]
+    width = 400
+    offset = 5x36
+    
+    progress_bar_min_width = 380
+    progress_bar_max_width = 380
+    progress_bar_corner_radius = 3
+
+    padding = 10
+    horizontal_padding = 10
+    frame_width = 1
+    gap_size = 3
+    font = "JetBrainsMono Nerd Font 12"
+
+    icon_theme = "BeautySolar"
+    enable_recursive_icon_lookup = true
+    corner_radius = 6
+
+    background = "#202020"
+    foreground = "#C7C7A5"
+
+[urgency_low]
+    background = "#202020"
+    highlight = "#E6B450"
+    frame_color = "#E6B450"
+    default_icon = "dialog-information"
+    format = "<b><span foreground='#E6B450'>%s</span></b>\n%b"
+
+[urgency_normal]
+    background = "#202020"
+    highlight = "#A6AD7F"
+    frame_color = "#A6AD7F"
+    default_icon = "dialog-warning"
+    format = "<b><span foreground='#A6AD7F'>%s</span></b>\n%b"
+
+[urgency_critical]
+    background = "#202020"
+    highlight = "#E68183"
+    frame_color = "#E68183"
+    default_icon = "dialog-error"
+    format = "<b><span foreground='#E68183'>%s</span></b>\n%b"
+

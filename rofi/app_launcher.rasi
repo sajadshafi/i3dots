@@ -1,0 +1,190 @@
+* {
+    font:   "JetBrainsMono Nerd Font 16";
+
+    background-color:   transparent;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+
+    text-color:         @foreground;
+}
+
+window {
+    location:       north;
+    y-offset:       calc(50% - 340px);
+    width:          680;
+    border-radius:  12px;
+    border: 2px;
+    border-color: @primary;
+    background-color:   @transparentBg;
+}
+
+mainbox {
+    padding:    16px;
+    children:	[ "inputbar", "listbox" ];
+}
+
+listbox {
+    spacing:                     15px;
+    padding:                     15px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview", "mode-switcher" ];
+}
+
+inputbar {
+    padding: 0px 16px;
+    children:   [ "textbox-prompt-colon", entry ];
+}
+
+textbox-prompt-colon {
+    enabled:		true;
+    width:		55px;
+    height:		40px;
+    expand:             false;
+    str:                "";
+    padding:		15px 20px;
+    border-radius:      5px 0px 0px 25px;
+    background-color:   @primary;
+    text-color:         @foreground;
+
+}
+
+entry {
+    border:		2px;
+    padding:		12px 20px;
+    background-color:	@background;
+    border-color:	@primary;
+    border-radius:	0px 25px 5px 0px;
+    placeholder:        "Search";
+    text-color:		@foreground;
+    placeholder-color:  @primary;
+}
+
+mode-switcher{
+    enabled:            true;
+    margin:		20px 0px 0px 0px;
+    spacing:            20px;
+    background-color:   transparent;
+    text-color:         @foreground;
+}
+
+button {
+    width:                       40px;
+    padding:                     12px;
+    border-radius:               5px 25px;
+    background-color:            @background;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @primary;
+    text-color:                  @foreground;
+}
+
+message {
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     12px;
+    border:                      0px 2px dash 0px 2px dash;
+    border-radius:               12px;
+    border-color:                @primary;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    background-color:   transparent;
+
+    margin:     15px 0 0;
+    lines:      10;
+    columns:    1;
+
+    fixed-height: false;
+}
+
+element {
+    padding:        10px 16px;
+    spacing:        20px;
+    border-radius:  5px 25px;
+}
+
+
+
+
+element normal urgent {
+    text-color: @white;
+}
+
+element normal active {
+    text-color: @background;
+}
+
+element alternate active {
+    text-color: @primary;
+}
+
+element selected {
+    text-color: @background;
+}
+
+element selected normal {
+    background-color:   @foreground;
+}
+
+element selected urgent {
+    background-color:   @primaryLight;
+}
+
+element selected active {
+    background-color:   @foreground;
+}
+
+element-icon {
+    size:   1em;
+}
+
+element-text {
+    text-color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+//
+// element selected {
+//     text-color: @nord0;
+// }
+//
+// element normal active {
+//     text-color: @primary;
+// }
+//
+// element alternate active {
+//     text-color: @primary;
+// }
+//
+// element-text {
+//     text-color: @foreground;
+// }
+//
+// element selected normal, element selected active {
+//     background-color:   @black;
+// }
+//
+// element-icon {
+//     size:           1em;
+//     vertical-align: 0.5;
+// }
