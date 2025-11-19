@@ -70,55 +70,55 @@ awful.keyboard.append_global_keybindings({
 
 	-- brightness up (5%)
 	awful.key({}, "XF86MonBrightnessUp", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/brightness.sh up")
+		awful.spawn.with_shell("~/.config/scripts/brightness.sh up")
 		awesome.emit_signal("brightness::update")
 	end, { description = "Increase brightness by 5%", group = "utility" }),
 
 	-- brightness down (5%)
 	awful.key({}, "XF86MonBrightnessDown", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/brightness.sh down")
+		awful.spawn.with_shell("~/.config/scripts/brightness.sh down")
 		awesome.emit_signal("brightness::update")
 	end, { description = "Decrease brightness by 5%", group = "utility" }),
 
 	-- brightness up (2%)
 	awful.key({ "Shift" }, "XF86MonBrightnessUp", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/brightness.sh up 2")
+		awful.spawn.with_shell("~/.config/scripts/brightness.sh up 2")
 		awesome.emit_signal("brightness::update")
 	end, { description = "Increase brightness by 2%", group = "utility" }),
 
 	-- brightness down (2%)
 	awful.key({ "Shift" }, "XF86MonBrightnessDown", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/brightness.sh down 2")
+		awful.spawn.with_shell("~/.config/scripts/brightness.sh down 2")
 		awesome.emit_signal("brightness::update")
 	end, { description = "Decrease brightness by 2%", group = "utility" }),
 
 	-- volume up (5%)
 	awful.key({}, "XF86AudioRaiseVolume", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/volume.sh up")
+		awful.spawn.with_shell("~/.config/scripts/volume.sh up")
 		awesome.emit_signal("audio::update")
 	end, { description = "Decrease volume by 2%", group = "utility" }),
 
 	-- volume down (5%)
 	awful.key({}, "XF86AudioLowerVolume", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/volume.sh down")
+		awful.spawn.with_shell("~/.config/scripts/volume.sh down")
 		awesome.emit_signal("audio::update")
 	end, { description = "Decrease volume by 2%", group = "utility" }),
 
 	-- volume up (2%)
 	awful.key({ "Shift" }, "XF86AudioRaiseVolume", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/volume.sh down 2")
+		awful.spawn.with_shell("~/.config/scripts/volume.sh down 2")
 		awesome.emit_signal("audio::update")
 	end, { description = "Decrease volume by 2%", group = "utility" }),
 
 	-- volume down (2)
 	awful.key({ "Shift" }, "XF86AudioLowerVolume", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/volume.sh down 2")
+		awful.spawn.with_shell("~/.config/scripts/volume.sh down 2")
 		awesome.emit_signal("audio::update")
 	end, { description = "Decrease volume by 2%", group = "utility" }),
 
 	-- Mute
 	awful.key({}, "XF86AudioMute", function()
-		awful.spawn.with_shell("~/.config/i3/scripts/volume.sh mute")
+		awful.spawn.with_shell("~/.config/scripts/volume.sh mute")
 		awesome.emit_signal("audio::update")
 	end, { description = "Mute the audio", group = "utility" }),
 
