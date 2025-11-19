@@ -4,9 +4,9 @@
 * {
     black:		#000000;
     white:		#FFFFFF;
-    background:		#444444; 
+    background:		#222436; 
     foreground:		#F8F8F2;
-    primary:		#A6AD7F;
+    primary:		#C099FF;
     primaryLight:	#D3C6AA;
     red:		#C42412;
     transparent:	#00000000;

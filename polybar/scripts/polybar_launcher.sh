@@ -16,7 +16,8 @@ polybar i3_menu 2>&1 | tee -a /tmp/i3_menu.log & disown
 polybar i3_workspaces 2>&1 | tee -a /tmp/i3_workspaces.log & disown
 polybar i3_center_clock 2>&1 | tee -a /tmp/i3_center_xwindow_clock.log & disown
 polybar i3_sysdetails 2>&1 | tee -a /tmp/i3_sysdetails.log & disown
-polybar i3_powermenu_bar 2>&1 | tee -a /tmp/i3_sysdetails.log & disown
+polybar i3_cava 2>&1 | tee -a /tmp/i3_powermenu_bar.log & disown
+polybar i3_powermenu_bar 2>&1 | tee -a /tmp/i3_cava.log & disown
 
 
 echo "Bars launched..."
