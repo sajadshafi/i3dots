@@ -20,11 +20,11 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Error handling
 naughty.connect_signal("request::display_error", function(message, startup)
-	naughty.notification({
-		urgency = "critical",
-		title = "Oops, an error happened" .. (startup and " during startup!" or "!"),
-		message = message,
-	})
+    naughty.notification({
+        urgency = "critical",
+        title = "Oops, an error happened" .. (startup and " during startup!" or "!"),
+        message = message,
+    })
 end)
 -- }}}
 
@@ -43,21 +43,24 @@ beautiful.bg_systray = "#C099FF"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 ---@diagnostic disable-next-line: undefined-global
 tag.connect_signal("request::default_layouts", function()
-	awful.layout.append_default_layouts({
-		awful.layout.suit.max,
-		awful.layout.suit.fair,
-		awful.layout.suit.spiral.dwindle,
-		awful.layout.suit.floating,
-	})
+    awful.layout.append_default_layouts({
+        awful.layout.suit.max,
+        awful.layout.suit.fair,
+        awful.layout.suit.spiral.dwindle,
+        awful.layout.suit.floating,
+    })
 end)
 -- }}}
 
 -- Enable sloppy focus, so that focus follows mouse.
 ---@diagnostic disable-next-line: undefined-global
 client.connect_signal("mouse::enter", function(c)
-	c:activate({ context = "mouse_enter", raise = false })
+    c:activate({ context = "mouse_enter", raise = false })
 end)
 
 require("wibar")
+
+
+awful.spawn.once("glava --desktop --force-mod radial")
 
 awful.spawn.with_shell("sh ~/.config/awesome/launch.sh")
