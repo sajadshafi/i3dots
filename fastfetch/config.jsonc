@@ -16,7 +16,7 @@
         // "width": 24,
         "padding": {
             "top": 3,
-           "left": 3
+            "left": 3
         },
     },
     "modules": [
@@ -24,7 +24,7 @@
         {
             "type": "custom",
             "format": "┌────────────────────── Hardware ──────────────────────┐",
-            "outputColor": "#C099FF"
+            "outputColor": "#FF014F"
         },
         {
             "type": "title",
@@ -51,13 +51,13 @@
         {
             "type": "custom",
             "format": "└──────────────────────────────────────────────────────┘",
-            "outputColor": "#C099FF"
+            "outputColor": "#FF014F"
         },
         "break",
         {
             "type": "custom",
             "format": "┌────────────────────── Software ──────────────────────┐",
-            "outputColor": "#C099FF"
+            "outputColor": "#FF014F"
         },
         {
             "type": "os",
@@ -117,11 +117,10 @@
             "key": "└ └󰉼 Theme",
             "keyColor": "blue"
         },
-
         {
             "type": "custom",
             "format": "└────────────────────────────────────────────────────┘",
-            "outputColor": "#C099FF"
+            "outputColor": "#FF014F"
         },
         {
             "type": "custom",

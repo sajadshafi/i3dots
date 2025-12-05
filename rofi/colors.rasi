@@ -6,7 +6,7 @@
     white:		#FFFFFF;
     background:		#222436; 
     foreground:		#F8F8F2;
-    primary:		#C099FF;
+    primary:		#ff014f;
     primaryLight:	#D3C6AA;
     red:		#C42412;
     transparent:	#00000000;
